@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Thành Viên"
+        android:textSize="30sp"
+        android:textColor="#E36767"/>
+
+    <Spinner
+        android:id="@+id/spnThanhVien"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Sách"
+        android:textSize="30sp"
+        android:textColor="#E36767"/>
+
+    <Spinner
+        android:id="@+id/spnSach"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Tiền thuê"
+        android:textSize="30sp"
+        android:textColor="#E36767"/>
+
+    <EditText
+        android:id="@+id/edtTien"
+        android:hint="Nhập tiền"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        />
+
+</LinearLayout>
