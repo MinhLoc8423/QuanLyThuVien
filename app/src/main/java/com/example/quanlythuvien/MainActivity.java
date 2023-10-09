@@ -27,6 +27,7 @@ import com.example.quanlythuvien.dao.SachDAO;
 import com.example.quanlythuvien.dao.ThuThuDAO;
 import com.example.quanlythuvien.fragment.QLLoaiSachFragment;
 import com.example.quanlythuvien.fragment.QLPhieuMuonFragment;
+import com.example.quanlythuvien.fragment.ThongKeTop10Fragment;
 import com.google.android.material.navigation.NavigationView;
 
 public class MainActivity extends AppCompatActivity {
@@ -65,6 +66,9 @@ public class MainActivity extends AppCompatActivity {
                 }
                 else if (item.getItemId() == R.id.mDoiMatKhau) {
                     showDialogDoiMatKhau();
+                }
+                else if (item.getItemId() == R.id.mTop10) {
+                    fragment = new ThongKeTop10Fragment();
                 }
                 else {
                     fragment = new QLPhieuMuonFragment();
