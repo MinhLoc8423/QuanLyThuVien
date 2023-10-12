@@ -20,7 +20,7 @@ public class PhieuMuonDAO {
     public ArrayList<PhieuMuon> getDSPhieuMuon(){
         ArrayList<PhieuMuon> list = new ArrayList<>();
         SQLiteDatabase sqLiteDatabase = dbHelper.getReadableDatabase();
-        Cursor cursor = sqLiteDatabase.rawQuery("SELECT pm.mapm, pm.matt, pm.matv, pm.masach, pm.ngay, pm.trasach, pm.tienthue, tt.hoten, tv.hoten, sc.tensach FROM PHIEUMUON pm, THANHVIEN tv, THUTHU tt, SACH sc WHERE pm.matv = tv.matv and pm.matt = tt.matt AND pm.masach = sc.masach", null);
+        Cursor cursor = sqLiteDatabase.rawQuery("SELECT pm.mapm, pm.matt, pm.matv, pm.masach, pm.ngay, pm.trasach, pm.tienthue, tv.hoten, tt.hoten, sc.tensach FROM PHIEUMUON pm, THANHVIEN tv, THUTHU tt, SACH sc WHERE pm.matv = tv.matv and pm.matt = tt.matt AND pm.masach = sc.masach", null);
         if(cursor.getCount() != 0){
             cursor.moveToFirst();
             do {

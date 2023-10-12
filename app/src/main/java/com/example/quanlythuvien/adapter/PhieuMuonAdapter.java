@@ -40,10 +40,10 @@ public class PhieuMuonAdapter extends RecyclerView.Adapter<PhieuMuonAdapter.View
     @Override
     public void onBindViewHolder(@NonNull ViewHolder holder, int position) {
         holder.txtPM.setText("Mã PM: " + list.get(position).getMapp());
-        holder.txtMaTV.setText("Mã TV: " + list.get(position).getMatv());
-        holder.txtTenTV.setText("Tên TV: " + list.get(position).getTentv());
         holder.txtMaTT.setText("Mã TT: " + list.get(position).getMatt());
         holder.txtTenTT.setText("Tên TT: " + list.get(position).getTentt());
+        holder.txtMaTV.setText("Mã TV: " + list.get(position).getMatv());
+        holder.txtTenTV.setText("Tên TV: " + list.get(position).getTentv());
         holder.txtMaSach.setText("Mã Sách: " + list.get(position).getMasach());
         holder.txtTenSach.setText("Tên Sách: " + list.get(position).getTensach());
         holder.txtNgay.setText("Ngày: " + list.get(position).getNgay());
@@ -85,10 +85,10 @@ public class PhieuMuonAdapter extends RecyclerView.Adapter<PhieuMuonAdapter.View
         public ViewHolder(@NonNull View itemView) {
             super(itemView);
             txtPM = itemView.findViewById(R.id.txtPM);
-            txtMaTV = itemView.findViewById(R.id.txtMaTV);
-            txtTenTV = itemView.findViewById(R.id.txtTenTV);
             txtMaTT = itemView.findViewById(R.id.txtMaTT);
             txtTenTT = itemView.findViewById(R.id.txtTenTT);
+            txtMaTV = itemView.findViewById(R.id.txtMaTV);
+            txtTenTV = itemView.findViewById(R.id.txtTenTV);
             txtMaSach = itemView.findViewById(R.id.txtMaSach);
             txtTenSach = itemView.findViewById(R.id.txtTenSach);
             txtNgay = itemView.findViewById(R.id.txtNgay);

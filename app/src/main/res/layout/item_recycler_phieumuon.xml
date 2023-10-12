@@ -18,22 +18,22 @@
             android:layout_height="wrap_content"/>
 
         <TextView
-            android:id="@+id/txtMaTV"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"/>
-
-        <TextView
-            android:id="@+id/txtTenTV"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"/>
-
-        <TextView
             android:id="@+id/txtMaTT"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"/>
 
         <TextView
             android:id="@+id/txtTenTT"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/txtMaTV"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/txtTenTV"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"/>
 

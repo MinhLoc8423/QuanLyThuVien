@@ -27,4 +27,16 @@ public class ThongKeDAO {
         }
         return list;
     }
+
+    public int getDoanhThu(String ngayBatDau, String ngayKetThuc){
+        ngayBatDau = ngayBatDau.replace("/","");
+        ngayKetThuc = ngayKetThuc.replace("/","");
+        SQLiteDatabase sqLiteDatabase = dbHelper.getReadableDatabase();
+        Cursor cursor = sqLiteDatabase.rawQuery("SELECT SUM(tienthue) FROM PHIEUMUON WHERE substr(ngay,7)||substr(ngay,4,2)||substr(ngay,1,2) BETWEEN ? AND ?", new String[]{ngayBatDau, ngayKetThuc});
+        if (cursor.getCount() != 0) {
+            cursor.moveToFirst();
+            return cursor.getInt(0);
+        }
+        return 0;
+    }
 }

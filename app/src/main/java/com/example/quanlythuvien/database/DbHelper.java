@@ -23,7 +23,7 @@ public class DbHelper extends SQLiteOpenHelper {
         db.execSQL(dbSach);
         db.execSQL(dbPhieuMuon);
 
-        db.execSQL("INSERT INTO THUTHU VALUES ('TT01', 'vuminhloc', 'abc123'), ('TT02', 'VuNgocSang', 'abc123')");
+        db.execSQL("INSERT INTO THUTHU VALUES ('TT01', 'Thu Thu1', 'abc123'), ('TT02', 'Thu Thu2', 'abc123')");
         db.execSQL("INSERT INTO LOAISACH VALUES (1, 'Thiếu Nhi'),(2, 'Tình Cảm'),(3, 'Giáo Khoa')");
         db.execSQL("INSERT INTO SACH VALUES (1, 'Chú Cuội', 2500, 1),(2, 'Tiếng Việt 1', 1000, 3),(3, 'Toán 1', 1000, 3)");
         db.execSQL("INSERT INTO THANHVIEN VALUES (1, 'Vu Minh Loc', '2003'),(2, 'Vu Ngoc Sang', '2013')");

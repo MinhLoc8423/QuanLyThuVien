@@ -132,7 +132,7 @@ public class QLPhieuMuonFragment extends Fragment {
         SharedPreferences sharedPreferences = getContext().getSharedPreferences("INFORMATION", Context.MODE_PRIVATE);
         String matt = sharedPreferences.getString("matt","");
         Date currentTime = Calendar.getInstance().getTime();
-        SimpleDateFormat simpleDateFormat = new SimpleDateFormat("dd/mm/yyyy", Locale.getDefault());
+        SimpleDateFormat simpleDateFormat = new SimpleDateFormat("dd/MM/yyyy", Locale.getDefault());
         String ngay = simpleDateFormat.format(currentTime);
         PhieuMuon phieuMuon = new PhieuMuon(matt, matv, masach, ngay, 0, tien);
         boolean kiemtra = phieuMuonDAO.themPhieuMuon(phieuMuon);

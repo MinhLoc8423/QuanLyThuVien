@@ -27,6 +27,8 @@ import com.example.quanlythuvien.dao.SachDAO;
 import com.example.quanlythuvien.dao.ThuThuDAO;
 import com.example.quanlythuvien.fragment.QLLoaiSachFragment;
 import com.example.quanlythuvien.fragment.QLPhieuMuonFragment;
+import com.example.quanlythuvien.fragment.QuanLyThanhVienFragment;
+import com.example.quanlythuvien.fragment.ThongKeDoanhThuFragment;
 import com.example.quanlythuvien.fragment.ThongKeTop10Fragment;
 import com.google.android.material.navigation.NavigationView;
 
@@ -52,7 +54,7 @@ public class MainActivity extends AppCompatActivity {
         navigationView.setNavigationItemSelectedListener(new NavigationView.OnNavigationItemSelectedListener() {
             @Override
             public boolean onNavigationItemSelected(@NonNull MenuItem item) {
-                Fragment fragment = new QLPhieuMuonFragment();
+                Fragment fragment = null;
                 if (item.getItemId() == R.id.mQLPhieuMuon){
                     fragment = new QLPhieuMuonFragment();
                 }
@@ -70,16 +72,24 @@ public class MainActivity extends AppCompatActivity {
                 else if (item.getItemId() == R.id.mTop10) {
                     fragment = new ThongKeTop10Fragment();
                 }
+                else if (item.getItemId() == R.id.mDoanhThu) {
+                    fragment = new ThongKeDoanhThuFragment();
+                }
+                else if (item.getItemId() == R.id.mQLThanhVien) {
+                    fragment = new QuanLyThanhVienFragment();
+                }
                 else {
                     fragment = new QLPhieuMuonFragment();
                 }
 
-                FragmentManager fragmentManager = getSupportFragmentManager();
-                fragmentManager.beginTransaction()
-                        .replace(R.id.frameLayout, fragment)
-                        .commit();
+                if(fragment != null){
+                    FragmentManager fragmentManager = getSupportFragmentManager();
+                    fragmentManager.beginTransaction()
+                            .replace(R.id.frameLayout, fragment)
+                            .commit();
+                    toolbar.setTitle(item.getTitle());
+                }
                 drawerLayout.closeDrawer(GravityCompat.START);
-                toolbar.setTitle(item.getTitle());
                 return false;
             }
         });
