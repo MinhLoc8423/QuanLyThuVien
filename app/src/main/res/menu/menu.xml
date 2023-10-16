@@ -7,24 +7,24 @@
     <item
         android:id="@+id/mQLoaiSach"
         android:title="Quản lý loại sách"
-        android:icon="@drawable/ic_home_24"/>
+        android:icon="@drawable/ic_menu_book_24"/>
     <item
         android:id="@+id/mQLSach"
         android:title="Quản lý sách"
-        android:icon="@drawable/ic_home_24"/>
+        android:icon="@drawable/ic_book_24"/>
     <item
         android:id="@+id/mQLThanhVien"
         android:title="Quản lý thành viên"
-        android:icon="@drawable/ic_home_24"/>
+        android:icon="@drawable/ic_person_4_24"/>
     <item
         android:title="Thống kê">
         <menu>
             <item android:id="@+id/mTop10"
                 android:title="Top 10 sách mượn nhiều nhất"
-                android:icon="@drawable/ic_home_24"/>
+                android:icon="@drawable/ic_show_chart_24"/>
             <item android:id="@+id/mDoanhThu"
                 android:title="Doanh Thu"
-                android:icon="@drawable/ic_home_24"/>
+                android:icon="@drawable/ic_monetization_on_24"/>
         </menu>
     </item>
     <item
@@ -32,10 +32,10 @@
         <menu>
             <item android:id="@+id/mDoiMatKhau"
                 android:title="Đổi mật khẩu"
-                android:icon="@drawable/ic_home_24"/>
+                android:icon="@drawable/ic_password_24"/>
                 <item android:id="@+id/mThoat"
                 android:title="Thoát"
-                android:icon="@drawable/ic_home_24"/>
+                android:icon="@drawable/ic_power_settings_new_24"/>
         </menu>
     </item>
 </menu>
