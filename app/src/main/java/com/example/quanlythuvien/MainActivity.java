@@ -27,6 +27,7 @@ import com.example.quanlythuvien.dao.SachDAO;
 import com.example.quanlythuvien.dao.ThuThuDAO;
 import com.example.quanlythuvien.fragment.QLLoaiSachFragment;
 import com.example.quanlythuvien.fragment.QLPhieuMuonFragment;
+import com.example.quanlythuvien.fragment.QLSachFragment;
 import com.example.quanlythuvien.fragment.QuanLyThanhVienFragment;
 import com.example.quanlythuvien.fragment.ThongKeDoanhThuFragment;
 import com.example.quanlythuvien.fragment.ThongKeTop10Fragment;
@@ -77,6 +78,9 @@ public class MainActivity extends AppCompatActivity {
                 }
                 else if (item.getItemId() == R.id.mQLThanhVien) {
                     fragment = new QuanLyThanhVienFragment();
+                }
+                else if (item.getItemId() == R.id.mQLSach) {
+                    fragment = new QLSachFragment();
                 }
                 else {
                     fragment = new QLPhieuMuonFragment();
